@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem 0 2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+.sidebar {
+  grid-area: sidebar;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40vw;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  z-index: 1000; /* Asegúrate de que esté encima del contenido principal */
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%); 
+}
+.sidebar.visible {
+  transform: translateX(0);
+}

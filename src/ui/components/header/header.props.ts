@@ -1,0 +1,1 @@
+export interface HeaderProps { onToggleSidebar: () => void, className: string }
